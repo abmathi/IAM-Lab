@@ -37,7 +37,7 @@ The lab scenario is based on a fictional company, Northstar Financial Group. The
 ![Entra Admin Center](screenshots/Step-1/1-entra-admin-center.png)
 
 ### Initial User Management View
-![Users Page](screenshots/Step-1/2-users-roles-access.png)
+![Users Page](screenshots/Step-1/2-user-roles-access.png)
 
 
 ## Step 2: Creating Organizational User Accounts
@@ -130,60 +130,63 @@ Key IAM concepts practiced:
 - Privileged account auditing
 - Identity governance fundamentals
 - Risk assessment documentation
+  
 
 ### Finding 1 — Overprivileged Administrative Account
+  
+  User:
+  - Kevin Patel
+  
+  Issue:
+  - Assigned Global Administrator role despite working in standard IT support.
+  
+  Risk:
+  - Full tenant compromise if account is abused or compromised.
+  
+  Recommendation:
+  - Remove Global Administrator access and retain only necessary lower-privileged administrative roles.
 
-User:
-- Kevin Patel
-
-Issue:
-- Assigned Global Administrator role despite working in standard IT support.
-
-Risk:
-- Full tenant compromise if account is abused or compromised.
-
-Recommendation:
-- Remove Global Administrator access and retain only necessary lower-privileged administrative roles.
 
 
 ### Observation — Appropriate Limited Administrative Role
-
-User:
-- Kevin Patel
-
-Observation:
-- User Administrator role may be appropriate for IT support responsibilities involving password resets and user lifecycle management.
-
-Assessment:
-- Lower risk than Global Administrator and potentially justified based on job function.
-
-
+  
+  User:
+  - Kevin Patel
+  
+  Observation:
+  - User Administrator role may be appropriate for IT support responsibilities involving password resets and user lifecycle management.
+  
+  Assessment:
+  - Lower risk than Global Administrator and potentially justified based on job function.
+  
+  
+  
 ### Finding 2 — Stale Contractor Account
-
-User:
-- James Walker
-
-Issue:
-- Contractor account remains enabled despite no active departmental membership or business justification.
-
-Risk:
-- Unauthorized access persistence and increased attack surface.
-
-Recommendation:
-- Disable or remove inactive contractor accounts immediately after contract termination.
+  
+  User:
+  - James Walker
+  
+  Issue:
+  - Contractor account remains enabled despite no active departmental membership or business justification.
+  
+  Risk:
+  - Unauthorized access persistence and increased attack surface.
+  
+  Recommendation:
+  - Disable or remove inactive contractor accounts immediately after contract termination.
 
 
 
 ### Observation — Proper Departmental Group Segmentation
-
-Department-based security groups were properly separated:
-- Finance-Team
-- HR-Team
-- IT-Support
-- Sales-Team
-
-Assessment:
-- Group structure follows basic Role-Based Access Control (RBAC) practices.
+  
+  Department-based security groups were properly separated:
+  - Finance-Team
+  - HR-Team
+  - IT-Support
+  - Sales-Team
+  
+  Assessment:
+  - Group structure follows basic Role-Based Access Control (RBAC) practices.
 
 
 
@@ -391,7 +394,7 @@ Key IAM/Security concepts practiced:
 ![Failed Sign-In](screenshots/Step-9/30-login-overview.png)
 
 ### Detailed Sign-In Telemetry
-![Sign-In Details](screenshots/Step-9/30-failed-login.png)
+![Sign-In Details](screenshots/Step-9/31-failed-login.png)
 
 
 ## Step 10: Executive IAM Security Assessment Report
@@ -407,6 +410,7 @@ The report simulated enterprise-style security documentation and executive commu
 ### Executive Security Findings Report
 ![Executive Report](screenshots/Step-10/34-security-report.png)
 
+### Read The Report Here
 [Executive Assessment Report](/executive-security-report.md)
 
 
